@@ -64,11 +64,6 @@ Empty
 ```bash
 npm install -g npm@9.6.1
 ```
-```bash
-npx thirdweb@latest create --contract
-```
-`web3 Hardhat Crowdfunding Empty`
-
 Перейдём в директорию web3
 ```bash
 npm install dotenv
@@ -83,11 +78,11 @@ hardhat.config.js
 module.exports = {
   solidity: {
     version: '0.8.9',
-    defaultNetwork: 'sepolia',
+    defaultNetwork: 'goerli',
     networks: {
       hardhat: {},
-      sepolia: {
-        url: 'https://rpc.ankr.com/eth_sepolia',
+      goerli: {
+        url: 'https://rpc.ankr.com/eth_goerli',
         accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
     },
@@ -101,11 +96,13 @@ module.exports = {
 };
 ```
 Деплоим смартконтракт
-cd web3 > npm run deploy
+`cd web3 > npm run deploy`
 переходим по полученной ссылке: https://thirdweb.com/contracts/deploy/QmVRAGvMjWfBCDJGgHzsru9eJyyVfwsFkZxVY3tGKLA9x5
 подключаем кошелёк 0xc88882bDf7cEA8429b73CD2af758C97d7CdfC00E
 и деплоим всё-таки в goerli
 получили номер контракта 0x89FD49daF5c21e6011D62A4bAC20B345d361D67a
+
+# FRONTEND
 ```bash
 cd client
 ```
