@@ -1,10 +1,7 @@
 ## Install web3 on Ubuntu 20.04.
 1. Keep the server Up to date
 ```bash
-apt update -y
-```
-```bash
-apt upgrade -y
+apt update -y && apt upgrade -y
 ```
 2. Install build-essential
 ```bash
