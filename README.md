@@ -64,3 +64,82 @@ Empty
 npm install -g npm@9.6.1
 ```
 
+npx thirdweb@latest create --contract
+
+web3
+
+Hardhat
+
+Crowdfunding
+
+Empty
+
+Перейдём в директорию web3
+
+npm install dotenv
+
+В папке contracts переименовываем контракт на CrowdFunding.sol и вставляем код смартконтракта
+
+Создаём .env файл и прописываем PRIVATE_KEY из кошелька
+
+https://www.ankr.com/rpc/eth/ - есть все сети
+
+Изменяем hardhat.config.js
+module.exports = {
+  solidity: {
+    version: '0.8.9',
+    defaultNetwork: 'sepolia',
+    networks: {
+      hardhat: {},
+      sepolia: {
+        url: 'https://rpc.ankr.com/eth_sepolia',
+        accounts: [`0x${process.env.PRIVATE_KEY}`]
+      }
+    },
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
+  },
+};
+
+Деплоим смартконтракт
+cd web3 > npm run deploy
+переходим по полученной ссылке:
+https://thirdweb.com/contracts/deploy/QmVRAGvMjWfBCDJGgHzsru9eJyyVfwsFkZxVY3tGKLA9x5
+
+подключаем кошелёк 0xc88882bDf7cEA8429b73CD2af758C97d7CdfC00E
+и деплоим всё-таки в goerli
+получили номер контракта 0x89FD49daF5c21e6011D62A4bAC20B345d361D67a
+
+переходим
+cd client
+устанавливаем реакт
+npx thirdweb create --app
+
+evm or solana?
+
+what is your project name? ./
+                          vite
+                          JS
+
+ПРИЛОЖЕНИЕ СОЗДАНО
+npm install react-router-dom
+- почему то поругалось на wagmi
+запустим приложение
+npm run dev
+http://94.103.90.157:5173 - не взлетело
+
+поставил    npm i wagmi ethers@^5       не взлетело
+поставил    sudo npm -g install create-react-app     получл предупреждение про tar@2.2.2
+поставил    npm i --save-dev @wagmi/cli  не взлетело
+заново создал frontend      npx thirdweb create --template vite-javascript-starter
+
+
+Conflicting peer dependency react@17.0.2
+node_modules/react from wagmi@0.2.28
+node_modules/@thirdweb-dev/react/node_modules/wagmi
+wagmi@"^0.2.28" from @thirdweb-dev/react@3.10.3
+node_modules/@thirdweb-dev/react
