@@ -47,3 +47,14 @@ node -v
 npm -v
 yarn -v
 ```
+Установим `thirdweb`
+```bash
+npx thirdweb@latest create --contract
+```
+Установки делаем следующие
+```bash
+web3
+Hardhat
+Crowdfunding
+Empty
+```
