@@ -33,7 +33,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 После включения репозитория обновите список пакетов и установите Yarn.
 ```bash
 sudo apt update
-sudo apt install yarn
+sudo apt install yarn -y
 ```
 Приведенная выше команда также установит Node.js. Если вы установили Node через nvm, пропустите установку Node.js с помощью:
 ```bash
