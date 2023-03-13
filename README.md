@@ -23,6 +23,7 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```bash
 sudo apt-get update
 ```
+YARN https://unetway.com/blog/kak-ustanovit-yarn-na-ubuntu-2004
 Импортируйте ключ GPG репозитория и добавьте репозиторий Yarn APT в свою систему, выполнив следующие команды:
 ```bash
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
