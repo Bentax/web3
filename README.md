@@ -58,3 +58,8 @@ Hardhat
 Crowdfunding
 Empty
 ```
+Нам предложат обновление
+```bash
+npm install -g npm@9.6.1
+```
+
