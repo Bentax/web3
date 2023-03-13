@@ -57,7 +57,16 @@ node -v
 npm -v
 yarn -v
 ```
-Установим `thirdweb`
+# VITE
+```bash
+yarn create vite
+```
+```bash
+cd client
+yarn
+yarn run dev --host
+```
+# Установим `thirdweb`
 ```bash
 npx thirdweb@latest create --contract
 ```
