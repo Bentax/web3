@@ -50,7 +50,7 @@ Verify the installations.
 node -v
 npm -v
 yarn -v
-git -v
+git --version
 ```
 # VITE
 ```bash
