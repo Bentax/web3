@@ -29,19 +29,16 @@ YARN
      echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
      sudo apt-get update && sudo apt-get install yarn
 ```
-https://unetway.com/blog/kak-ustanovit-yarn-na-ubuntu-2004
-Импортируйте ключ GPG репозитория и добавьте репозиторий Yarn APT в свою систему, выполнив следующие команды:
+Либо так
 ```bash
+## https://unetway.com/blog/kak-ustanovit-yarn-na-ubuntu-2004
+## Импортируйте ключ GPG репозитория и добавьте репозиторий Yarn APT в свою систему, выполнив следующие команды:
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-После включения репозитория обновите список пакетов и установите Yarn.
-```bash
+## После включения репозитория обновите список пакетов и установите Yarn.
 sudo apt update
 sudo apt install yarn -y
-```
-Приведенная выше команда также установит Node.js. Если вы установили Node через nvm, пропустите установку Node.js с помощью:
-```bash
+## Приведенная выше команда также установит Node.js. Если вы установили Node через nvm, пропустите установку Node.js с помощью:
 sudo apt install --no-install-recommends yarn
 ```
 Install Git
