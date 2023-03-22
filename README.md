@@ -52,6 +52,10 @@ npm -v
 yarn -v
 git --version
 ```
+Создадим и перейдём в mern
+```bash
+mkdir mern && cd mern
+```
 ## Создадим приложение React
 ```bash
 npx create-react-app client
@@ -66,4 +70,10 @@ npm update tar
 ```
 ```bash
 tar --version
+```
+## Server
+```bash
+mkdir server && cd server
+npm init -y
+npm install mongodb express cors dotenv
 ```
