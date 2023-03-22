@@ -29,18 +29,6 @@ YARN
      echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
      sudo apt-get update && sudo apt-get install yarn
 ```
-Либо так
-```bash
-## https://unetway.com/blog/kak-ustanovit-yarn-na-ubuntu-2004
-## Импортируйте ключ GPG репозитория и добавьте репозиторий Yarn APT в свою систему, выполнив следующие команды:
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-## После включения репозитория обновите список пакетов и установите Yarn.
-sudo apt update
-sudo apt install yarn -y
-## Приведенная выше команда также установит Node.js. Если вы установили Node через nvm, пропустите установку Node.js с помощью:
-sudo apt install --no-install-recommends yarn
-```
 Install Git
 ```bash
 apt install git
@@ -76,4 +64,29 @@ tar --version
 mkdir server && cd server
 npm init -y
 npm install mongodb express cors dotenv
+npm install --save-dev nodemon
+npm install nodemon -g
+```
+
+```bash
+//mern/server/server.js
+const express = require("express");
+const app = express();
+const cors = require("cors");
+require("dotenv").config({ path: "./config.env" });
+const port = process.env.PORT || 5000;
+app.use(cors());
+app.use(express.json());
+app.use(require("./routes/record"));
+// get driver connection
+const dbo = require("./db/conn");
+ 
+app.listen(port, () => {
+  // perform a database connection when server starts
+  dbo.connectToServer(function (err) {
+    if (err) console.error(err);
+ 
+  });
+  console.log(`Server is running on port: ${port}`);
+});
 ```
