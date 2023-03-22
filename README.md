@@ -52,6 +52,14 @@ npm -v
 yarn -v
 git --version
 ```
+Вам предложат обновить
+```bash
+npm install -g npm@9.6.2
+```
+И обновить tar@2.2.2
+```bash
+npm update tar
+```
 # VITE
 ```bash
 yarn create vite
