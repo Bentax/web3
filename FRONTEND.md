@@ -1,4 +1,23 @@
 ## React
+Установить приложение `create-react-app` помогает настроить все инструменты, необходимые для создания приложений React. 
+Выполните следующую команду npm, чтобы установить утилиту `create-response-app`:
+```bash
+sudo npm -g install create-react-app
+```
+Проверьте, обновлена ли версия (5.0.1 - 15.03.23) с помощью команды:
+```bash
+create-react-app --version
+```
+Процесс загрузки завершен. Теперь вы можете создать React-Application.
+
+Мы даем название приложению `client`. Выполните указанную ниже команду, чтобы создать приложение:
+```bash
+npx create-react-app client
+```
+We will also need Axios in order to make get/post requests with ajax. So let’s install that now:
+```bash
+npm i -S axios
+```
 Screen
 ```bash
 apt install screen -y
