@@ -14,17 +14,10 @@ create-react-app --version
 ```bash
 npx create-react-app client
 ```
-We will also need Axios in order to make get/post requests with ajax. So let’s install that now:
-
-Перейдите в папку проекта
-
-cd frontend
-Начните процесс сборки Запустите процесс сборки с помощью npm start.
-
-npm start
-Каждый раз для пересборки надо остановить ^C и запустить заново npm start
-
-Дальнейшая работа
+Перейдите в папку проекта `cd frontend`
+Начните процесс сборки Запустите процесс сборки с помощью `npm start`.
+Каждый раз для пересборки надо остановить `^C` и запустить заново `npm start`
+## Дальнейшая работа
 Может понадобится библиотека Ethers
 ```bash
 npm install ethers@5.7.2 --save
@@ -40,12 +33,3 @@ In React router v6, we have to replace the Switch component with Routes Make sur
 ```bash
 npm i -D react-router-dom@latest
 ```
-Есть несколько вариантов как можно обращаться к файлам: 
-1: / - путь к корневой папке Пример:
-import styles from '/dist/styles/main.min.css';
-2: './' - путь относительно файла в котором мы находимся. Пример:
-import store from './store.js';
-3: '../' - выходим из папки в которой находимся, т.е. путь на уровень выше. Пример:
-import store from '../store.js';
-4: 'react' - путь к папке react в папке node_modules Пример:
-import React from 'react'; 
