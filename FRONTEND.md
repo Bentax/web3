@@ -1,5 +1,10 @@
 ## React
-
+Screen
+```bash
+apt install screen -y
+screen -S session1
+```
+Bootstrap
 ```bash
 npm install bootstrap react-router-dom
 ```
