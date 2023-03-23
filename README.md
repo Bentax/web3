@@ -40,6 +40,7 @@ npm -v
 yarn -v
 git --version
 ```
+https://github.com/Bentax/web3/blob/main/FRONTEND.md
 ## Screen
 ```bash
 apt install screen -y
