@@ -1,4 +1,4 @@
-## Install web3 on Ubuntu 20.04.
+## Install on Ubuntu 20.04.
 1. Keep the server Up to date
 ```bash
 apt update -y && apt upgrade -y
