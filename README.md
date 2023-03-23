@@ -55,12 +55,15 @@ this will list all PID listening on this port, once you have the PID you can ter
 ```bash
 kill -9 <PID>
 ```
-Есть несколько вариантов как можно обращаться к файлам: 
+# Есть несколько вариантов как можно обращаться к файлам: 
 1: / - путь к корневой папке Пример:
 import styles from '/dist/styles/main.min.css';
+
 2: './' - путь относительно файла в котором мы находимся. Пример:
 import store from './store.js';
+
 3: '../' - выходим из папки в которой находимся, т.е. путь на уровень выше. Пример:
 import store from '../store.js';
+
 4: 'react' - путь к папке react в папке node_modules Пример:
 import React from 'react'; 
