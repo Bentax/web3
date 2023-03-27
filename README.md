@@ -48,9 +48,12 @@ mkdir backend && cd backend
 npm init
 ```
 ```bash
+npm i nodemon
 npm i dotenv
 touch .env
 touch .gitignore
+npm i express
+npm i mongoose
 ```
 
 https://github.com/Bentax/web3/blob/main/FRONTEND.md
