@@ -40,6 +40,13 @@ npm -v
 yarn -v
 git --version
 ```
+## Backend
+```bash
+mkdir backend && cd backend
+```
+```bash
+npm init
+```
 https://github.com/Bentax/web3/blob/main/FRONTEND.md
 ## Screen
 ```bash
