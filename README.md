@@ -47,6 +47,12 @@ mkdir backend && cd backend
 ```bash
 npm init
 ```
+```bash
+npm i dotenv
+touch .env
+touch .gitignore
+```
+
 https://github.com/Bentax/web3/blob/main/FRONTEND.md
 ## Screen
 ```bash
